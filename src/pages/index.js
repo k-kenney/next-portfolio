@@ -3,6 +3,9 @@ import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/dev-profile.jpeg";
 import AnimatedText from "@/componenets/AnimatedText";
+import Link from "next/link";
+import { LinkArrow } from "@/componenets/Icons";
+import HireMe from "@/componenets/HireMe";
 
 export default function Home() {
   return (
@@ -18,16 +21,37 @@ export default function Home() {
               <Image src={profilePic} alt="Kayla" className="w-full h-auto" />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text="Turning Vision Into Reality With Code And Design." className="!text-6xl !text-left" />
-              <p>
+              <AnimatedText
+                text="Turning Vision Into Reality With Code And Design."
+                className="!text-6xl !text-left"
+              />
+              <p className="my-4 text-base font-medium">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
+              <div className="flex items-center self-start mt-2">
+                <Link
+                  href="/kayla-kenney-front-end-resume.pdf"
+                  target={"_blank"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" download={true}
+                >
+                  Resume
+                  <LinkArrow className="w-6 ml-1"/>
+                </Link>
+                <Link
+                  href="mailto:kaylachristinekenney@gmail.com"
+                  target={"_blank"}
+                  className="ml-4 text-lg font-medium capitalize text-dark underline "
+                >
+                  Contact
+                </Link>
+              </div>
             </div>
           </div>
         </Layout>
+        <HireMe />
       </main>
     </>
   );
