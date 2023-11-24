@@ -1,37 +1,37 @@
-import AnimatedText from "@/componenets/AnimatedText";
-import Layout from "@/componenets/Layout";
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
 import Head from "next/head";
 import React, { useEffect, useRef } from "react";
 import profilePic from "../../public/images/profile/dev-pic-2.jpeg";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
-import Skills from "@/componenets/Skills";
-import Experience from "@/componenets/Experience";
-import Education from "@/componenets/Education";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
-const AnimatedNumbers = ({value}) => {
-const ref = useRef(null);
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
 
-const motionValue = useMotionValue(0);
-const springValue = useSpring(motionValue, { duration: 3000 })
-const isInView = useInView(ref, {once: true})
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
 
-useEffect(() => {
-    if(isInView) {
-        motionValue.set(value);
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
     }
-}, [isInView, value, motionValue])
+  }, [isInView, value, motionValue]);
 
-useEffect(() => {
+  useEffect(() => {
     springValue.on("change", (latest) => {
-        if(ref.current && latest.toFixed(0) <= value ) {
-            ref.current.textContent = latest.toFixed(0); 
-        }
-    })
-}, [springValue, value])
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
 
-    return <span ref={ref}></span>
-}
+  return <span ref={ref}></span>;
+};
 
 const about = () => {
   return (
@@ -49,20 +49,20 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m Kayla, a web developer and UI/UX designer with a passion
-                for creating beautiful, functional, and user-centered digital
-                experiences. With 2 years of experience in the field. I am
-                always looking for new and innovative ways to bring my clients&apos;
-                visions to life.
+                Hi, I&apos;m Kayla, a web developer and UI/UX designer with a
+                passion for creating beautiful, functional, and user-centered
+                digital experiences. With 2 years of experience in the field. I
+                am always looking for new and innovative ways to bring my
+                clients&apos; visions to life.
               </p>
               <p className="font-medium my-4">
                 I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                pretty – it&apos;s about solving problems and creating
+                intuitive, enjoyable experiences for users.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
+                Whether I&apos;m working on a website, mobile app, or other
+                digital product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
                 your next project.
@@ -78,30 +78,30 @@ const about = () => {
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
-                <div className="flex flex-col items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimatedNumbers value={50} />+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">
-                        satisfied clients
-                    </h2>
-                </div>
-                <div className="flex flex-col items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimatedNumbers value={40} />+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">
-                        projects completed
-                    </h2>
-                </div>
-                <div className="flex flex-col items-end justify-center">
-                    <span className="inline-block text-7xl font-bold">
-                        <AnimatedNumbers value={2} />+
-                    </span>
-                    <h2 className="text-xl font-medium capitalize text-dark/75">
-                        years of experience
-                    </h2>
-                </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={50} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  satisfied clients
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={40} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  projects completed
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={2} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  years of experience
+                </h2>
+              </div>
             </div>
           </div>
           <Skills />

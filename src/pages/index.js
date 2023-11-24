@@ -1,12 +1,12 @@
-import Layout from "@/componenets/Layout";
+import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/dev-profile.jpeg";
-import AnimatedText from "@/componenets/AnimatedText";
+import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
-import { LinkArrow } from "@/componenets/Icons";
-import HireMe from "@/componenets/HireMe";
-import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg"
+import { LinkArrow } from "@/components/Icons";
+import HireMe from "@/components/HireMe";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
@@ -36,10 +36,11 @@ export default function Home() {
                 <Link
                   href="/kayla-kenney-front-end-resume.pdf"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark" download={true}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  download={true}
                 >
                   Resume
-                  <LinkArrow className="w-6 ml-1"/>
+                  <LinkArrow className="w-6 ml-1" />
                 </Link>
                 <Link
                   href="mailto:kaylachristinekenney@gmail.com"
@@ -54,7 +55,7 @@ export default function Home() {
         </Layout>
         <HireMe />
         <div className="absolute right-8 bottom-8 inline-block w-24">
-          <Image src={lightBulb } alt="Kayla" className="w-full h-auto" />
+          <Image src={lightBulb} alt="Kayla" className="w-full h-auto" />
         </div>
       </main>
     </>
