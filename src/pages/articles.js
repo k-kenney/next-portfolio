@@ -12,6 +12,7 @@ import article4 from "../../public/images/articles/form-validation.png";
 import article5 from "../../public/images/articles/todo-list.png";
 import article6 from "../../public/images/articles/create-modal.png";
 import article7 from "../../public/images/articles/smooth-scrolling.png";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -48,7 +49,7 @@ const MovingImage = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="w-96 z-10 h-auto hidden absolute rounded-lg"
+        className="w-96 z-10 h-auto hidden absolute rounded-lg md:!hidden"
         priority 
         sizes="(max-width: 768px) 100vw,
         (max-width: 1200px) 50vw,
@@ -65,10 +66,11 @@ const Article = ({ img, title, date, link }) => {
     whileInView={{y:0, transition:{duration:0.5, ease:"easeInOut"}}}
     viewport={{once: true}}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
-    justify-between bg-light text-dark first-mt-0 border border-solid border-dark border-r-4 border-b-4  dark:bg-dark dark:border-light dark:text-light"
+    justify-between bg-light text-dark first-mt-0 border border-solid border-dark border-r-4 border-b-4  dark:bg-dark dark:border-light dark:text-light
+    sm:flex-col"
     >
       <MovingImage title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark sm:self-start sm:pl-0 xs:text-sm">{date}</span>
     </motion.li>
   );
 };
@@ -95,7 +97,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline mt-4 xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -113,10 +115,11 @@ const articles = () => {
 
         <meta name="description" content="font-end web developer"></meta>
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText className="mb-16" text="Words Can Change the World!" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" text="Words Can Change the World!" />
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               title="Build A Custom Pagination Component In Reactjs From Scratch"
               summary="Learn how to build a custom pagination component in ReactJS from scratch. 
