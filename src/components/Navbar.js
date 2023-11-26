@@ -60,24 +60,24 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
+    <header className="w-full px-32 py-4 font-medium flex items-center justify-between dark:text-light relative z-10 lg:px-16 md:px-12 sm:px-8">
       <button
-        className="flex-col justify-center items-center hidden lg:flex"
+        className="flex-col justify-center items-center hidden lg:flex pt-7"
         onClick={handleClick}
       >
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-0.5 w-6 rounded-sm ${
-            isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-[.150rem] w-8 rounded-sm ${
+            isOpen ? "rotate-45 translate-y-2" : "-translate-y-0.5"
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-[.140rem] w-7 rounded-sm my-1.5 ${
             isOpen ? "opacity-0" : "opacity-100"
           }`}
         ></span>
         <span
-          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-0.5 w-6 rounded-sm ${
-            isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+          className={`bg-dark dark:bg-light transition-all duration-300 ease-in-out display-block h-[.150rem] w-8 rounded-sm ${
+            isOpen ? "-rotate-45 -translate-y-2" : "translate-y-0.5"
           }`}
         ></span>
       </button>
@@ -118,7 +118,7 @@ const Navbar = () => {
         >
           <LinkedInIcon />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           href="https://twitter.com"
           target={"_blank"}
           whileHover={{ y: -2 }}
@@ -135,11 +135,11 @@ const Navbar = () => {
           className="w-6 ml-3"
         >
           <DribbbleIcon />
-        </motion.a>
+        </motion.a> */}
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className={`ml-3 flex items-center justify-center rounded-full p-1
+          className={`ml-10 flex items-center justify-center rounded-full p-1
         ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
         >
           {mode === "dark" ? (
@@ -162,10 +162,10 @@ const Navbar = () => {
         <CustomMobileLink href="/" title="Home"  toggle={handleClick} />
         <CustomMobileLink href="/about" title="About" toggle={handleClick} />
         <CustomMobileLink href="/projects" title="Projects" toggle={handleClick} />
-        <CustomMobileLink href="/articles" title="Articles" toggle={handleClick} />
+        {/* <CustomMobileLink href="/articles" title="Articles" toggle={handleClick} /> */}
       </nav>
 
-      <nav className="flex items-center justify-center flex-wrap mt-2">
+      <nav className="flex items-center justify-center flex-wrap mt-7">
       <motion.a
         href="https://twitter.com"
         target={"_blank"}
@@ -193,7 +193,7 @@ const Navbar = () => {
       >
         <LinkedInIcon />
       </motion.a>
-      <motion.a
+      {/* <motion.a
         href="https://twitter.com"
         target={"_blank"}
         whileHover={{ y: -2 }}
@@ -201,8 +201,8 @@ const Navbar = () => {
         className="w-6 mx-3sm:mx-1 bg-light rounded-full"
       >
         <PinterestIcon />
-      </motion.a>
-      <motion.a
+      </motion.a> */}
+      {/* <motion.a
         href="https://twitter.com"
         target={"_blank"}
         whileHover={{ y: -2 }}
@@ -210,7 +210,7 @@ const Navbar = () => {
         className="w-6 ml-3 sm:mx-1"
       >
         <DribbbleIcon />
-      </motion.a>
+      </motion.a> */}
 
       <button
         onClick={() => setMode(mode === "light" ? "dark" : "light")}

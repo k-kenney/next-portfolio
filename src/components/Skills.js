@@ -22,7 +22,7 @@ const Skills = () => {
     <>
     <h2 className='font-bold text-8xl md:text-6xl md:mt-32 mt-64 w-full text-center'>Skills</h2>
     <div className='w-full h-screen relative flex items-center justify-center rounded-full 
-    bg-circularLight dark:bg-circularDark lg:bg-circularlightLg lg:dark:bg-circularDarkLg md:bg-circularlightMd md:dark:bg-circularDarkMd sm:bg-circularlightsm sm:dark:bg-circularDarksm  
+    bg-circularLight dark:bg-circularDark lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightsm sm:dark:bg-circularDarksm  
     lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]'>
         <motion.div 
         className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadoow-dark cursor-pointer
