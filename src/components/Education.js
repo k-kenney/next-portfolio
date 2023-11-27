@@ -55,8 +55,7 @@ const Education = () => {
             time="2022-2023"
             place="Le Wagon"
             placeLink="https://www.lewagon.com/"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            info="Gained skills in Ruby, SQL, JavaScript, CSS, HTML, Bootstrap, Figma, Git and Ruby on Rails alongside an outstanding coding community through Le Wagon. "
           />
 
           <Details
@@ -64,8 +63,7 @@ const Education = () => {
             time="2022-2023"
             place="Skillcrush"
             placeLink="https://skillcrush.com/"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            info="Learned HTML, CSS, Git, JavaScript, React.js and more throughout this self-paced online front-end bootcamp."
           />
 
           <Details
@@ -73,8 +71,8 @@ const Education = () => {
             time="2020-2021"
             place="American College of Education"
             placeLink="https://ace.edu/"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-            Intelligence."
+            info="Earned a master of education in literacy through the American College of Education.
+            Basically, I'm a pro at teaching kids how to read!"
           />
 
           <Details
@@ -82,7 +80,8 @@ const Education = () => {
             time="2006-2010"
             place="University of North Texas"
             placeLink="https://www.unt.edu/"
-            info="Earned a 4 year degree after studying ESL education for K-12."
+            info="Earned a 4 year degree after studying ESL education for K-12. Then moved across the world
+            to teach"
           />
 
         </ul>
