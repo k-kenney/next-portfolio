@@ -21,9 +21,12 @@ export default function Home() {
         <Layout className="pt-0 md:pt-16 sm:pt-0">
           <div className="flex items-center gap-20 lg:gap-0 justify-between w-full lg:flex-col">
             <div className="w-1/2 md:w-3/4">
-              <Image src={profilePic} alt="Kayla" className="w-full h-auto lg:hidden md:inline-block md:w-full rounded-lg "
-              priority 
-              sizes="(max-width: 768px) 100vw,
+              <Image
+                src={profilePic}
+                alt="Kayla"
+                className="w-full h-auto lg:hidden md:inline-block md:w-full rounded-lg "
+                priority
+                sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw"
               />
@@ -34,10 +37,10 @@ export default function Home() {
                 className="!text-6xl !text-left xl:!text-6xl lg:!text-center lg:!text-7xl md:!text-5xl sm:!3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
-                As a skilled full-stack developer, I am dedicated to turning
+                As a skilled front-end developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                projects and articles, showcasing my expertise in React.js,
+                Next.js, and more.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link

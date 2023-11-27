@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, placeLink }) => {
   const ref = useRef(null);
   return (
     <li
@@ -15,9 +15,17 @@ const Details = ({ type, time, place, info }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">{type}</h3>
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+          {type}
+        </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
-          {time} | {place}
+          {time} |           <a
+            href={placeLink}
+            target="_blank"
+            className="text-primary capitalize dark:text-primaryDark hover:underline"
+          >
+            {place}
+          </a>
         </span>
         <p className="font-medium w-full md:text-sm">{info}</p>
       </motion.div>
@@ -33,7 +41,9 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 ">Education</h2>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16 ">
+        Education
+      </h2>
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
@@ -41,28 +51,40 @@ const Education = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="Fullstack Web Development"
+            time="2022-2023"
+            place="Le Wagon"
+            placeLink="https://www.lewagon.com/"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="Front-end Web Development"
+            time="2022-2023"
+            place="Skillcrush"
+            placeLink="https://skillcrush.com/"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
 
           <Details
-            type="Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
+            type="M.Ed. in Literacy"
+            time="2020-2021"
+            place="American College of Education"
+            placeLink="https://ace.edu/"
             info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
             Intelligence."
           />
+
+          <Details
+            type="B.Sc. in Interdisciplinary Studies"
+            time="2006-2010"
+            place="University of North Texas"
+            placeLink="https://www.unt.edu/"
+            info="Earned a 4 year degree after studying ESL education for K-12."
+          />
+
         </ul>
       </div>
     </div>

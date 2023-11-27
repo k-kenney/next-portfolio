@@ -11,16 +11,16 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     >
       <LiIcon reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"spring"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize dark:text-primaryDark"
+            className="text-primary capitalize dark:text-primaryDark hover:underline"
           >
             @{company}
           </a>
@@ -47,63 +47,63 @@ const Experience = () => {
       </h2>
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
         <motion.div
-          style={{scaleY: scrollYProgress}}
+          style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+            position="Freelance Web Developer"
+            company="Self-Employed"
+            companyLink="https://kaylachristinekenney.com/"
+            time="2023-Present"
+            address="Remote, Europe"
+            work="Consult with clients to develop responsive and visually stunning 
+            custom websites using React.js, Next.js, JavaScript, HTML, Sass,
+            Vite, Tailwind, GitHub and more."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+            position="Curriculum Writer"
+            company="Quality Schools International"
+            companyLink="https://www.qsi.org/"
+            time="2022-2023"
+            address="Remote"
+            work="Collaborated with a team of 12 providing professional experience 
+            to create the literacy curriculum for 35+ schools in 30+ different countries."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+            position="5th Grade Classroom Teacher"
+            company="Kyiv International School"
+            companyLink="https://kyiv.qsi.org/"
+            time="2021-2022"
+            address="Kyiv, Ukraine"
+            work="Taught all subjects using the US Common Core curriculum and 
+            analyzed data from assessment results to design intervention
+            plans resulting in 90% of students making progress toward goals. 
+            In addition, I optimized online learning for students in all subjects after
+            evacuating Ukraine with 100% attendance."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+            position="4th Grade Classroom Teacher"
+            company="QSI International School of Yerevan"
+            companyLink="https://yerevan.qsi.org/"
+            time="2018-2021"
+            address="Yerevan, Armenia"
+            work="Planned and implemented 7 lessons per day and communicated with 
+            parents & guardians on an as needed basis
+            to provide updates on student progress and support home learning."
           />
 
           <Details
-            position="Software Engineer"
-            company="Google"
-            companyLink="www.google.com"
-            time="2022-Present"
-            address="Mountain View, CA"
-            work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+            position="Year 1 Classroom Teacher"
+            company="New Cairo British International School"
+            companyLink="https://ncbis.co.uk/"
+            time="2016-2018"
+            address="Cairo, Egypt"
+            work="Planned weekly for and conducted lessons to teach math, inquiry, 
+            and literacy to native and international students aged 4-6 on a team of 3 teachers."
           />
         </ul>
       </div>

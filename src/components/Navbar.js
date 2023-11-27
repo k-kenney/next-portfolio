@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import {
-  DribbbleIcon,
   GithubIcon,
+  InstagramIcon,
   LinkedInIcon,
   MoonIcon,
-  PinterestIcon,
   SunIcon,
   TwitterIcon,
 } from "./Icons";
@@ -87,12 +86,22 @@ const Navbar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/articles" title="Articles" className="ml-4" />
+          {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://twitter.com"
+          href="https://www.linkedin.com/in/teachertotechie/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+        >
+          <LinkedInIcon />
+        </motion.a>
+
+        <motion.a
+          href="https://twitter.com/kk_web_dev"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -101,7 +110,7 @@ const Navbar = () => {
           <TwitterIcon />
         </motion.a>
         <motion.a
-          href="https://twitter.com"
+          href="https://github.com/k-kenney"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -109,33 +118,16 @@ const Navbar = () => {
         >
           <GithubIcon />
         </motion.a>
+
         <motion.a
-          href="https://twitter.com"
+          href="https://www.instagram.com/kaylachristinekenney/"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
         >
-          <LinkedInIcon />
+          <InstagramIcon />
         </motion.a>
-        {/* <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3 bg-light rounded-full"
-        >
-          <PinterestIcon />
-        </motion.a>
-        <motion.a
-          href="https://twitter.com"
-          target={"_blank"}
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 ml-3"
-        >
-          <DribbbleIcon />
-        </motion.a> */}
 
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
@@ -167,7 +159,17 @@ const Navbar = () => {
 
       <nav className="flex items-center justify-center flex-wrap mt-7">
       <motion.a
-        href="https://twitter.com"
+        href="https://www.linkedin.com/in/teachertotechie/"
+        target={"_blank"}
+        whileHover={{ y: -2 }}
+        whileTap={{ scale: 0.9 }}
+        className="w-6 mx-3 sm:mx-1"
+      >
+        <LinkedInIcon />
+      </motion.a>
+
+      <motion.a
+        href="https://twitter.com/kk_web_dev"
         target={"_blank"}
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.9 }}
@@ -176,7 +178,7 @@ const Navbar = () => {
         <TwitterIcon />
       </motion.a>
       <motion.a
-        href="https://twitter.com"
+        href="https://github.com/k-kenney"
         target={"_blank"}
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.9 }}
@@ -184,34 +186,17 @@ const Navbar = () => {
       >
         <GithubIcon />
       </motion.a>
-      <motion.a
-        href="https://twitter.com"
-        target={"_blank"}
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-        className="w-6 mx-3 sm:mx-1"
-      >
-        <LinkedInIcon />
-      </motion.a>
-      {/* <motion.a
-        href="https://twitter.com"
-        target={"_blank"}
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-        className="w-6 mx-3sm:mx-1 bg-light rounded-full"
-      >
-        <PinterestIcon />
-      </motion.a> */}
-      {/* <motion.a
-        href="https://twitter.com"
-        target={"_blank"}
-        whileHover={{ y: -2 }}
-        whileTap={{ scale: 0.9 }}
-        className="w-6 ml-3 sm:mx-1"
-      >
-        <DribbbleIcon />
-      </motion.a> */}
 
+      <motion.a
+          href="https://www.instagram.com/kaylachristinekenney/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-8 mx-3"
+        >
+          <InstagramIcon />
+        </motion.a>
+      
       <button
         onClick={() => setMode(mode === "light" ? "dark" : "light")}
         className={`ml-3 flex items-center justify-center rounded-full p-1
