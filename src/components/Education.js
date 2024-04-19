@@ -12,7 +12,7 @@ const Details = ({ type, time, place, info, placeLink }) => {
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
-        whileInView={{ y: 0 }}
+        whileInView={{ y: -20 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
@@ -47,7 +47,7 @@ const Education = () => {
       <div ref={ref} className="w-[75%] lg:w-[90%] md:w-full mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+          className="absolute left-[60px] top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
