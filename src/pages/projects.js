@@ -5,7 +5,12 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/kenney-ind-img.png";
+import project2 from "../../public/images/projects/christy-website-img.png";
+import project3 from "../../public/images/projects/super-sticky-notes.png";
+import project4 from "../../public/images/projects/memory-match.png";
+import project5 from "../../public/images/projects/guess-the-word.png";
+import project6 from "../../public/images/projects/weather-app.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -88,7 +93,7 @@ const Project = ({ title, type, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
+        {/* <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">{type}</span> */}
         <Link
           href={link}
           target="_blank"
@@ -125,74 +130,79 @@ const projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
-            text="Something Awesome Coming Soon!"
-            // text="Code: Where Dreams Transform into Reality"
+            className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl"
+            // text="Something Awesome Coming Soon!"
+            text="Code: Where Dreams Transform into Reality"
           />
 
-          {/* <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"> 
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"> 
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Kenney Industries"
                 img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
+                summary="A business website for a machining company in Dallas, TX. Built using
+                React, Tailwind, JS, HTML, CSS. Experienced working with the client to meet the needs
+                of their company."
+                link="https://kenneyind.com/"
+                github="https://github.com/k-kenney/kenney-ind"
                 type="Featured Project"
               />
             </div>
 
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Christina Healing Arts"
+                img={project2}
+                link="https://www.christinahealingarts.com/"
+                github="https://github.com/k-kenney/christinahealingarts"
+                type="Featured Project"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Guess the Word"
+                img={project5}
+                link="https://k-kenney.github.io/guess-the-word/"
+                github="https://github.com/k-kenney/guess-the-word"
+                type="Featured Project"
+              />
+            </div>
+
+
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
-                img={project1}
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                local currency."
-                link="/"
-                github="/"
+                title="Magic Memory"
+                img={project4}
+                summary="A React learning project. I used useEffect, state, and props to create an interactive memory matching game.
+                This game also keeps track of how many turns a player has taken. Match them all correctly to win."
+                link="https://magic-memory-mu.vercel.app/"
+                github="https://github.com/k-kenney/memory-game"
                 type="Featured Project"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
+                title="Super Sticky Notes"
+                img={project3}
+                link="https://codesandbox.io/s/sticky-note-ui-421s0d"
+                github="https://codesandbox.io/s/sticky-note-ui-421s0d"
                 type="Featured Project"
               />
             </div>
+
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Crypto Screener Application"
-                img={project1}
-                link="/"
-                github="/"
+                title="Weather App"
+                img={project6}
+                link="https://weather-app-beta-plum.vercel.app/"
+                github="https://github.com/k-kenney/weather-app"
                 type="Featured Project"
               />
             </div>
-          </div> */}
+
+          </div>
         </Layout>
       </main>
     </>
