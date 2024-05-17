@@ -11,6 +11,7 @@ import project3 from "../../public/images/projects/super-sticky-notes.png";
 import project4 from "../../public/images/projects/memory-match.png";
 import project5 from "../../public/images/projects/guess-the-word.png";
 import project6 from "../../public/images/projects/weather-app.png";
+import project7 from "../../public/images/projects/react-job-Board.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -169,18 +170,19 @@ const projects = () => {
               />
             </div>
 
-
             <div className="col-span-12">
               <FeaturedProject
-                title="Magic Memory"
-                img={project4}
-                summary="A React learning project. I used useEffect, state, and props to create an interactive memory matching game.
-                This game also keeps track of how many turns a player has taken. Match them all correctly to win."
-                link="https://magic-memory-mu.vercel.app/"
-                github="https://github.com/k-kenney/memory-game"
+                title="React Job Board"
+                img={project7}
+                summary="A React.js job board website that leverages the React.js library and various React packages to enhance its functionality. I implemented a JSON server as the backend to retrieve endpoints, ensuring seamless CRUD operations for displaying newly created jobs."
+                link="https://github.com/k-kenney/react-job-board"
+                github="https://github.com/k-kenney/react-job-board"
                 type="Featured Project"
               />
             </div>
+
+
+            
 
             <div className="col-span-6 sm:col-span-12">
               <Project
@@ -198,6 +200,18 @@ const projects = () => {
                 img={project6}
                 link="https://weather-app-beta-plum.vercel.app/"
                 github="https://github.com/k-kenney/weather-app"
+                type="Featured Project"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Magic Memory"
+                img={project4}
+                summary="A React learning project. I used useEffect, state, and props to create an interactive memory matching game.
+                This game also keeps track of how many turns a player has taken. Match them all correctly to win."
+                link="https://magic-memory-mu.vercel.app/"
+                github="https://github.com/k-kenney/memory-game"
                 type="Featured Project"
               />
             </div>
