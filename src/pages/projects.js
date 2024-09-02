@@ -188,7 +188,7 @@ const projects = () => {
 
             <div className="col-span-12">
               <FeaturedProject
-                title="React Job Board"
+                title="Food Finder"
                 img={project7}
                 summary="A Vite, React, and Tailwind CSS-based food delivery website that utilizes Redux Toolkit for state management. I designed the entire website layout and logo, and implemented key features including an interactive map and dynamic food cards. The project follows a modular architecture, enabling seamless user interactions and efficient data management."
                 link="https://foodfinder-hicb.onrender.com/"
