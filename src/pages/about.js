@@ -57,25 +57,25 @@ const about = () => {
                 About Me
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m Kayla, a web developer and designer with a passion
-                for creating beautiful, functional, and user-centered digital
-                experiences. With 2 years of experience in the field. I am
-                always looking for new and innovative ways to bring my
-                clients&apos; visions to life.
+                Hi, I&apos;m Kayla, a web developer and designer dedicated to
+                crafting beautiful, functional, and user-focused digital
+                experiences. With 2 years of hands-on experience, I&apos;m
+                constantly exploring new and innovative ways to turn my
+                clients&apos; visions into reality.
               </p>
               <p className="font-medium my-4">
-                My coding learning journey includes not one, but two web
-                development bootcamps. I’m a very self-motivated learner and
-                constantly trying to problem solve. When I can&apos;t figure it
-                out on my own, I reach out to my supportive coding
-                communities. 
+                My journey into coding has been both intensive and rewarding,
+                having completed two web development bootcamps. I&apos;m a
+                self-driven learner with a passion for problem-solving, and I
+                actively engage with my supportive coding communities whenever I
+                need a fresh perspective or guidance.
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                Whether I&appos;m building a website or developing a digital product,
+                I bring a strong commitment to design excellence and
+                user-centric thinking to every project. &appos;m excited about the
+                opportunity to apply my skills and passion to your next
+                endeavor.
               </p>
             </div>
 

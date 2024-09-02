@@ -51,23 +51,31 @@ const Experience = () => {
           className="absolute left-[60px] top- w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[24px]"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-7">
-        <Details
+          <Details
+            position="Web Developer and Designer"
+            company="E3 Tooling"
+            companyLink="https://536bde-ba.myshopify.com/"
+            time="2024-Present"
+            address="Remote"
+            work="Redesigned and rebuilt the website from scratch, optimized the Shopify store for a 45% sales boost, enhanced SEO and visuals to increase user engagement by 30%, and continuously improved web functionality, leading to a 15% increase in overall performance and user satisfaction."
+          />
+          <Details
             position="Software Developer Intern"
-            company="Nau Bank"
+            company="Frigate"
             companyLink="https://www.frigate.global/"
-            time="2023-Present"
+            time="2023-2024"
             address="Remote, Global"
             work="Collaborate with the global development team to Assist in building front-end 
-            and back-end structures using Flutterflow, Java and PostgreSQL. 
+            and back-end structures using Flutterflow, Java, ReactNative, Firebase and PostgreSQL. 
           "
           />
           <Details
             position="Freelance Web Developer"
             company="Self-Employed"
             companyLink="https://kaylachristinekenney.com/"
-            time="2023-Present"
-            address="Remote, Europe"
-            work="Consult with clients to develop responsive and visually stunning 
+            time="2023-2024"
+            address="Remote"
+            work="Consulted with clients to develop responsive and visually stunning 
             custom websites using React.js, Next.js, JavaScript, HTML, Sass,
             Vite, Tailwind, GitHub and more."
           />

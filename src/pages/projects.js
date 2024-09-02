@@ -11,7 +11,7 @@ import project3 from "../../public/images/projects/super-sticky-notes.png";
 import project4 from "../../public/images/projects/memory-match.png";
 import project5 from "../../public/images/projects/guess-the-word.png";
 import project6 from "../../public/images/projects/weather-app.png";
-import project7 from "../../public/images/projects/react-job-Board.png";
+import project7 from "../../public/images/projects/flavor-finder.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -19,10 +19,14 @@ const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light
-    lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light
-      xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
+    <article
+      className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light
+    lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light
+      xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
+      />
       <Link
         href={link}
         target="_blank"
@@ -34,7 +38,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           trasition={{ duration: 0.02 }}
-          priority 
+          priority
           sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           50vw"
@@ -42,15 +46,21 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             {" "}
@@ -71,10 +81,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
-    xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light
-      md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
+    xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light
+      md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
+      />
       <Link
         href={link}
         target="_blank"
@@ -86,7 +100,7 @@ const Project = ({ title, type, img, link, github }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           trasition={{ duration: 0.02 }}
-          priority 
+          priority
           sizes="(max-width: 768px) 100vw,
           (max-width: 1200px) 50vw,
           50vw"
@@ -100,7 +114,9 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="mt-2 flex items-center justify-between w-full">
           <Link
@@ -133,10 +149,10 @@ const projects = () => {
           <AnimatedText
             className="mb-16 lg:!text-5xl sm:mb-8 sm:!text-4xl xs:!text-3xl"
             // text="Something Awesome Coming Soon!"
-            text="Code: Where Dreams Transform into Reality"
+            text="Where Creativity Meets Code: Bringing Ideas to Life"
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0"> 
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title="Kenney Industries"
@@ -174,15 +190,12 @@ const projects = () => {
               <FeaturedProject
                 title="React Job Board"
                 img={project7}
-                summary="A React.js job board website that leverages the React.js library and various React packages to enhance its functionality. I implemented a JSON server as the backend to retrieve endpoints, ensuring seamless CRUD operations for displaying newly created jobs."
-                link="https://github.com/k-kenney/react-job-board"
-                github="https://github.com/k-kenney/react-job-board"
+                summary="A Vite, React, and Tailwind CSS-based food delivery website that utilizes Redux Toolkit for state management. I designed the entire website layout and logo, and implemented key features including an interactive map and dynamic food cards. The project follows a modular architecture, enabling seamless user interactions and efficient data management."
+                link="https://foodfinder-hicb.onrender.com/"
+                github="https://github.com/chingu-voyages/v50-tier2-team-15"
                 type="Featured Project"
               />
             </div>
-
-
-            
 
             <div className="col-span-6 sm:col-span-12">
               <Project
@@ -215,7 +228,6 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-
           </div>
         </Layout>
       </main>
